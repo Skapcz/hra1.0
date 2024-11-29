@@ -8,7 +8,6 @@ class Resource {
     
     display() {
         push();
-        strokeWeight(1);
         switch(this.type) {
             case 'stone':
                 fill(120, 120, 120);
@@ -23,8 +22,8 @@ class Resource {
                 circle(this.x, this.y - this.size/2, this.size);
                 break;
             case 'iron':
-                fill(100, 100, 100);
-                stroke(80, 80, 80);
+                fill(169, 169, 169);
+                stroke(105, 105, 105);
                 rect(this.x - this.size/2, this.y - this.size/2, this.size, this.size);
                 stroke(165, 42, 42);
                 line(this.x - this.size/3, this.y, this.x + this.size/3, this.y);
